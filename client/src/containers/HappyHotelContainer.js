@@ -35,7 +35,7 @@ const HappyHotelContainer = () => {
     <>
         <h1>Happy hotels!</h1>
         <FormBox addBooking={addBooking}/>
-        <BookingsList removeBooking={removeBooking}/>
+        <BookingsList bookings={bookings} removeBooking={removeBooking}/>
     </>
     )
 };

@@ -1,6 +1,6 @@
 
 
-const Booking = () => {
+const Booking = ({booking, removeBooking}) => {
 
     return (
         <>
