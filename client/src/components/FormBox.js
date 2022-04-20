@@ -5,6 +5,7 @@ const FormBox = ({addBooking}) => {
 
     const [formData, setFormData] = useState({});
 
+
     const onChange = (event) => {
         formData[event.target.id] = event.target.value
         setFormData(formData)
@@ -21,9 +22,9 @@ const FormBox = ({addBooking}) => {
     <form onSubmit={onSubmit}>
         <h2>New Booking:</h2>
         <label htmlFor="name">Booking Name:</label>
-        <input onChange={onChange} type="text" id="name"/>
+        <input onChange={onChange} type="text" id="name" required/>
         <label htmlFor="email_address">E-mail Address</label>
-        <input onChange={onChange} type="text" id="email_address"/>
+        <input onChange={onChange} type="text" id="email_address" required/>
         <label htmlFor="checked_in">Checked in?</label>
         <input onChange={onChange} type="radio" value="yes" id="checked_in"/>
         <label for="yes">Yes</label>

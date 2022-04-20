@@ -9,6 +9,14 @@ const Booking = ({booking, removeBooking}) => {
             removeBooking(booking._id);
         })
     }
+
+    const handleCheckIn = () => {
+
+    }
+
+    const handleCheckOut = () => {
+
+    }
     
     // const checkboxClass = classNames( {
     //     "checked-in": booking.checked_in === true
@@ -29,6 +37,8 @@ const Booking = ({booking, removeBooking}) => {
             <p>Checked in? {booking.checked_in}</p>
             {/* <input type="checkbox" /> */}
             <button onClick={handleDelete}>Delete Booking</button>
+            <button onClick={handleCheckIn}>Check in</button>
+            <button onClick={handleCheckOut}>Check out</button>
         </>
     )
 }
