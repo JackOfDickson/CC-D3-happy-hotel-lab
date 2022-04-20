@@ -1,6 +1,6 @@
 import Booking from "./Booking"
 
-const BookingsList = () => {
+const BookingsList = ({removeBooking}) => {
 
     return (
         <>

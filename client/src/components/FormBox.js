@@ -1,6 +1,6 @@
 
 
-const FormBox = () => {
+const FormBox = ({addBooking}) => {
 
     return (
     <>
